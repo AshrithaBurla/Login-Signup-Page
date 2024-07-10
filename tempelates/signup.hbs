@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/signup.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="head">MUSICAL MUSTS</h1>
+    <div class="main">
+        <div class="signupImages"> 
+            <div class="slides"><img src="images/bc8ba620-10d9-483e-a633-17a135978bc0.jpeg" style="width: 90%;"></div>
+            <div class="slides"><img src="images/3e876f80-248c-4669-b01e-4f410af5fc70 (1).jpeg" style="width: 90%;" ></div>
+            <div class="slides"><img src="images/7bd58176-ceb6-40ff-8cc0-3d733ab21c59 (1).jpeg" style="width: 90%;"></div>
+            <div class="slides"><img src="images/496c0cfe-a4f6-40f2-bfea-991ecc93a0e8 (1).jpeg" style="width: 90%;"></div>
+            <div class="slides"><img src="images/Music Digital Artwork by J Douglas Dalrymple, Digital on Paper, 12 x 12 in - Modern Original Artwork For Sale on Saatchi Art_.jpeg" style="width: 90%;"></div>
+           
+        
+        </div>
+        <script>
+        var slideIndex=0;
+        carousel();
+        function carousel()
+        {
+            var i;
+            var x= document.getElementsByClassName("slides");
+            for(i=0;i<x.length;i++)
+            {
+                x[i].style.display="none";
+            }
+            slideIndex++;
+            if(slideIndex > x.length)
+            {
+                slideIndex=1;
+            }
+            x[slideIndex-1].style.display="block";
+            setTimeout(carousel, 2000);
+        }
+    </script>
+        <div class="signup">
+            <h1>Join the Groove!</h1>
+            <h4>Sign up today and get connected to a world of music at your fingertips!</h4>
+            <h2>Sign Up</h2>
+            <form action="/signup" method="post">
+            <input type="text" name="name" placeholder="Name"> 
+            <input type="password" name="password" placeholder="Password">
+            <input type="submit" class="submit">
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>

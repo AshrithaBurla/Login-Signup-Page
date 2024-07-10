@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/home.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="mySlides"><img src="/images/lohri-celebration-india.jpg" alt="Lohri Celebration" style="width: 100%"></div>
+    <div class="mySlides"><img src="/images/lovely-woman-with-ukulele.jpg" alt="Woman with Ukulele" style="width: 100%"></div>
+    <div class="mySlides"><img src="/images/male-hands-piano-keys-closeup-beautiful-colorful-background-concept-musical-activity.jpg" alt="Piano Hands" style="width: 100%"></div>
+    <div class="mySlides"><img src="/images/musical-background-with-acoustic-guitar-speaker-notepad-table.jpg" alt="Musical Background" style="width: 100%"></div>
+    <script>
+        var slideIndex=0;
+        carousel();
+        function carousel()
+        {
+            var i;
+            var x= document.getElementsByClassName("mySlides");
+            for(i=0;i<x.length;i++)
+            {
+                x[i].style.display="none";
+            }
+            slideIndex++;
+            if(slideIndex > x.length)
+            {
+                slideIndex=1;
+            }
+            x[slideIndex-1].style.display="block";
+            setTimeout(carousel, 2000);
+        }
+    </script>
+    
+    <h1>Welcome to Musical Musts</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio itaque officia tempore voluptates ipsa odit ratione dolore aut autem ab error numquam reiciendis at amet unde ea libero, modi impedit.
+    Hic nemo autem magni ex architecto, quae nisi cumque deleniti optio, officiis ab libero impedit doloribus iste dolore fuga repellendus vel pariatur facere dignissimos inventore molestiae! Cum ex velit veniam.
+    Ullam, unde architecto molestiae nam in laboriosam libero cupiditate veniam obcaecati expedita quos pariatur alias quo. Dolore quidem nesciunt optio sequi mollitia. Quos nulla facere, neque animi nisi architecto dolorem.
+    Obcaecati ea inventore incidunt eveniet quo et, porro beatae mollitia impedit, dolorem dolores quod quidem ratione quas, rerum suscipit vel voluptates commodi cupiditate sequi libero. Voluptate cumque laboriosam eveniet deserunt!</p>
+    <hr>
+    <h4>Listening , Vibing , Chillin</h4>
+    <hr>
+</body>
+</html>
